@@ -12,7 +12,9 @@
     "format": "prettier --trailing-comma es5 --single-quote --write 'src/*/*.js' 'src/*/!(node_modules)/**/*.js' '!src/components/solc/**/*.js' '!src/components/evm/**/*.js' webpack.config.js",
     "lint-javascript": "exec eslint --config ./config/eslint/eslint.json --ext \".js\" ./src",
     "lint": "yarn run lint-javascript",
-    "postinstall": "node scripts/postinstall.js"
+    "postinstall": "node scripts/postinstall.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintIgnore": [
     "ethereumjs-tx-*.js",
@@ -131,7 +133,8 @@
     "reselect": "^3.0.1",
     "rxjs": "^6.3.3",
     "solc": "^0.5.10",
-    "web3": "0.19"
+    "web3": "0.19",
+    "@snyk/protect": "latest"
   },
   "browserslist": [
     ">0.2%",
@@ -174,5 +177,6 @@
       "jsx",
       "node"
     ]
-  }
+  },
+  "snyk": true
 }
