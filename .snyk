@@ -1,0 +1,8 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - ipfs-api > peer-info > peer-id > libp2p-crypto > libp2p-crypto-secp256k1 > multihashing-async > async > lodash:
+        patched: '2022-03-25T18:59:26.392Z'
