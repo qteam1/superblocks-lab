@@ -106,7 +106,7 @@
     "jszip": "^3.1.5",
     "jszip-utils": "^0.0.2",
     "less": "^3.8.1",
-    "merkle-patricia-tree": "^2.3.1",
+    "merkle-patricia-tree": "^4.0.0",
     "normalize-css": "^2.3.1",
     "openzeppelin-solidity": "^2.3.0",
     "prop-types": "^15.6.2",
