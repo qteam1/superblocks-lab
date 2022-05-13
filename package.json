@@ -130,7 +130,7 @@
     "redux-thunk": "^2.3.0",
     "reselect": "^3.0.1",
     "rxjs": "^6.3.3",
-    "solc": "^0.5.10",
+    "solc": "^0.5.11",
     "web3": "0.19"
   },
   "browserslist": [
